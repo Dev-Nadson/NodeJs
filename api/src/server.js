@@ -6,6 +6,10 @@ const server = http.createServer((request, response) => {
     if (method === "GET" && url === "/products") {
         return response.end("Lista de Produtos")
     }
+
+    if (method === "POST" && url === "/products") {
+        return response.end("Lista de Produtos")
+    }
     return response.writeHead(404).end("Not Found")
 })
 
